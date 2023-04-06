@@ -1,6 +1,6 @@
-from flows import pipe
+from ../104/flows import pipe
 from prefect.deployments import Deployment
-from prefect.orion.schemas.schedules import CronSchedule
+from prefect.server.schemas.schedules import CronSchedule
 
 cr = CronSchedule(cron="3 3 3 3 2", timezone="America/Chicago")
 

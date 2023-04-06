@@ -1,6 +1,6 @@
-from flows import pipe
+from ../104/flows import pipe
 from prefect.deployments import Deployment
-from prefect.orion.schemas.schedules import RRuleSchedule
+from prefect.server.schemas.schedules import RRuleSchedule
 
 rr = RRuleSchedule(rrule="FREQ=HOURLY;UNTIL=20300102T040000Z", timezone="Asia/Kolkata")
 deployment = Deployment.build_from_flow(
